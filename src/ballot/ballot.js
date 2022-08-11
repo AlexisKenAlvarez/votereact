@@ -82,7 +82,7 @@ const Ballot = () => {
     const [userEmail, setEmail] = useState('')
 
     useEffect(() => {
-        Axios.get("http://localhost:3001/login").then((response) => {
+        Axios.get("https://votereact-app.herokuapp.com/login").then((response) => {
             if (response.data.loggedIn === true) {
                 setEmail(response.data.user[0].email)
             }
@@ -105,7 +105,7 @@ const Ballot = () => {
             } else {
                 setPicked(true)
                 setDoneVoting(true)
-                Axios.post('http://localhost:3001/voted', 
+                Axios.post('https://votereact-app.herokuapp.com/voted', 
                 {email: userEmail, president: form.president, vice: form.vice, treasurer: form.treasurer}).then((response) => {
                     
                 })

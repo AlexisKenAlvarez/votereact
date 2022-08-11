@@ -148,7 +148,7 @@ const Register = props => {
         setPass2(false)
         setPass3(false)
 
-        Axios.post('http://localhost:3001/register', 
+        Axios.post('https://votereact-app.herokuapp.com/register', 
         {username: username, 
         email: email, 
         password: password,

@@ -36,7 +36,7 @@ const App = () => {
     }
 
     const logOut = () => {
-        Axios.post('http://localhost:3001/logout').then((response) => {
+        Axios.post('https://votereact-app.herokuapp.com/logout').then((response) => {
             console.log(response)
             
         }, [])
@@ -48,7 +48,7 @@ const App = () => {
     }
 
  
-    Axios.get("http://localhost:3001/login").then((response) => {
+    Axios.get("https://votereact-app.herokuapp.com/login").then((response) => {
         if (response.data?.loggedIn) {
             showNav(true)
         } else {

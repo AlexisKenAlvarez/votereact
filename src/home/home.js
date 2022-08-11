@@ -19,7 +19,7 @@ const Home = () => {
     Axios.defaults.withCredentials = true;
 
     useEffect(() => {
-        Axios.get("http://localhost:3001/login").then((response) => {
+        Axios.get("https://votereact-app.herokuapp.com/login").then((response) => {
             if (response.data.loggedIn === true) {
                 console.log(response.data)
                 setEmail(response.data.user[0].email)
@@ -30,7 +30,7 @@ const Home = () => {
     const handleBallot = () => {
         
 
-        Axios.post('http://localhost:3001/checkVote', 
+        Axios.post('https://votereact-app.herokuapp.com/checkVote', 
         {email: userEmail}).then((response) => {
             if (response.data.voted === true) {
                 navigate("/responded", {replace: true})
