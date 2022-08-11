@@ -13,8 +13,7 @@ const PrivateLogin = ({ children }) => {
     useEffect(()=> {
         Axios.get("https://votereact-app.herokuapp.com/login").then((response) => {
             if (response.data.loggedIn === true) {
-                // navigate("/home" , {replace: true})
-                console.log(response)
+                navigate("/home" , {replace: true})
                 
             } else {
                 setLoggedIn(false);
