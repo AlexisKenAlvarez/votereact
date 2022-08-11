@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+.hidden {
+  display: none;
+}
+
+.registerParent {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  position: absolute;
+  z-index: 1;
+  display: block;
+}
+
+.registerParent .close-div {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  background-color: rgba(204, 204, 204, 0.38);
+  height: 100vh;
+  cursor: pointer;
+}
+
+.registerParent .registerContainer {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
+  z-index: 2;
+  position: relative;
+}
+
+.registerParent .registerContainer .submitReg {
+  margin: 0 auto;
+  display: block;
+  width: 10rem;
+  height: 2.8rem;
+  font-size: 1.2rem;
+  border-radius: 18px;
+  border: none;
+  background-color: #42B72A;
+  color: white;
+  -webkit-transition: 0.1s all ease-in-out;
+  transition: 0.1s all ease-in-out;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.registerParent .registerContainer .registerHeader {
+  width: 19.5rem;
+  height: 5rem;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.registerParent .registerContainer .registerHeader .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-size: bolder;
+  color: #9B9A9A;
+}
+
+.registerParent .registerContainer .regInputParent {
+  height: 17rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.registerParent .registerContainer .regInputParent .reg-email {
+  margin-top: 1rem !important;
+}
+
+.registerParent .registerContainer .regInputParent .reg-inputs {
+  border-radius: 0px;
+  border: 0px solid #9B9A9A;
+  width: 20rem;
+  background-color: rgba(160, 160, 160, 0.2);
+  margin: 0 auto;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-bottom: 3px solid grey;
+  outline: none;
+}
+
+.registerParent .registerContainer .regInputParent .terms {
+  color: #9B9A9A;
+  width: 19rem;
+  margin: 0 auto;
+  font-size: 0.8rem;
+}
+
+.submitReg:hover {
+  background-color: #2b831a !important;
+}
+
+.error-container {
+  width: 17rem;
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.error-container .errorList {
+  color: #e2252b;
+}
+
+.error-container .success {
+  color: #42B72A;
+  list-style-type: none;
+}
+
+@media screen and (min-width: 650px) {
+  .registerParent {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+    display: block;
+  }
+  .registerParent .registerContainer {
+    height: auto;
+    overflow: auto;
+    padding-bottom: 2rem;
+    width: 23rem;
+    margin: 0 auto;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 1rem;
+    margin-top: 8rem;
+    -webkit-box-shadow: 5px 10px 18px #888888;
+            box-shadow: 5px 10px 18px #888888;
+  }
+  .registerParent .registerContainer .submitReg {
+    margin: 0 auto;
+    display: block;
+    width: 10rem;
+    height: 2.8rem;
+    font-size: 1.2rem;
+    border-radius: 18px;
+    border: none;
+    background-color: #42B72A;
+    color: white;
+    cursor: pointer;
+  }
+  .registerParent .registerContainer .registerHeader {
+    width: 19.5rem;
+    height: 5rem;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+    margin-top: 2rem;
+    position: relative;
+  }
+  .registerParent .registerContainer .registerHeader .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-size: bolder;
+  }
+  .registerParent .registerContainer .regInputParent {
+    height: 17rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .registerParent .registerContainer .regInputParent .reg-email {
+    margin-top: 1rem !important;
+  }
+  .registerParent .registerContainer .regInputParent .reg-inputs {
+    width: 20rem;
+    background-color: rgba(160, 160, 160, 0.2);
+    margin: 0 auto;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+  .registerParent .registerContainer .regInputParent .terms {
+    color: #9B9A9A;
+    width: 19rem;
+    margin: 0 auto;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .registerParent {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+    display: block;
+  }
+  .registerParent .registerContainer {
+    height: auto;
+    padding-bottom: 2rem;
+    width: 23rem;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 1rem;
+    margin-top: 9rem;
+  }
+  .registerParent .registerContainer .submitReg {
+    margin: 0 auto;
+    display: block;
+    width: 10rem;
+    height: 2.8rem;
+    font-size: 1.2rem;
+    border-radius: 18px;
+    border: none;
+    background-color: #42B72A;
+    color: white;
+    cursor: pointer;
+  }
+  .registerParent .registerContainer .registerHeader {
+    width: 19.5rem;
+    height: 5rem;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+    margin-top: 2rem;
+    position: relative;
+  }
+  .registerParent .registerContainer .registerHeader .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-size: bolder;
+  }
+  .registerParent .registerContainer .regInputParent {
+    height: 17rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .registerParent .registerContainer .regInputParent .reg-email {
+    margin-top: 1rem !important;
+  }
+  .registerParent .registerContainer .regInputParent .reg-inputs {
+    width: 20rem;
+    background-color: rgba(160, 160, 160, 0.2);
+    margin: 0 auto;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+  .registerParent .registerContainer .regInputParent .terms {
+    color: #9B9A9A;
+    width: 19rem;
+    margin: 0 auto;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 1400px) and (min-height: 720px) {
+  .registerParent {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+    display: block;
+  }
+  .registerParent .registerContainer {
+    width: 30rem;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 1rem;
+    margin-top: 7rem;
+    position: relative;
+  }
+  .registerParent .registerContainer .submitReg {
+    margin: 0 auto;
+    display: block;
+    width: 14rem;
+    height: 4rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 18px;
+    border: none;
+    background-color: #42B72A;
+    color: white;
+    cursor: pointer;
+    margin-top: 6rem;
+  }
+  .registerParent .registerContainer .registerHeader {
+    width: 26.5rem;
+    height: 5rem;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+    margin-top: 1rem;
+    position: relative;
+  }
+  .registerParent .registerContainer .registerHeader .registerTitle {
+    font-size: 2.5rem;
+  }
+  .registerParent .registerContainer .registerHeader .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-size: bolder;
+    font-weight: 800;
+  }
+  .registerParent .registerContainer .regInputParent {
+    height: 17rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .registerParent .registerContainer .regInputParent .reg-email {
+    margin-top: 1.5rem !important;
+  }
+  .registerParent .registerContainer .regInputParent .reg-inputs {
+    width: 26rem;
+    height: 4rem;
+    background-color: rgba(160, 160, 160, 0.2);
+    margin: 0 auto;
+    font-size: 1.3rem;
+    margin-bottom: 0.9rem;
+    padding: 1rem;
+  }
+  .registerParent .registerContainer .regInputParent .terms {
+    color: #9B9A9A;
+    width: 25rem;
+    margin: 0 auto;
+    font-size: 1rem;
+  }
+  .error-container {
+    width: 17rem;
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+  }
+  .error-container .errorList {
+    color: #e2252b;
+  }
+  .error-container .success {
+    color: #42B72A;
+    list-style-type: none;
+  }
+}
+
+@media screen and (min-width: 1600px) and (min-height: 860px) {
+  .registerParent .registerContainer {
+    margin-top: 12rem;
+  }
+}
+/*# sourceMappingURL=register.css.map */

@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700;900&display=swap");
+.responded-wrapper {
+  background-color: #082C4C;
+  width: 100%;
+  height: 100vh;
+}
+
+.responded-wrapper .responded-nav {
+  width: 100%;
+  height: 4rem;
+  background-color: #0A355C;
+}
+
+.responded-wrapper .responded-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.responded-wrapper .responded-hero .responded-h1 {
+  color: white;
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.responded-wrapper .responded-hero .responded-p {
+  margin-top: 2rem;
+}
+
+.responded-wrapper .responded-hero .responded-click .error-span {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #5DADF5;
+}
+
+.responded-wrapper .responded-hero .error-bot {
+  width: 18rem;
+}
+
+.responded-h1:before {
+  content: url("../images/underline.svg");
+  position: absolute;
+  -webkit-transform: scale(0.45);
+          transform: scale(0.45);
+  bottom: -3rem;
+  z-index: -1;
+  left: 0;
+  right: 16rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .responded-wrapper {
+    background-color: #082C4C;
+    width: 100%;
+    height: 100vh;
+  }
+  .responded-wrapper .responded-nav {
+    width: 100%;
+    height: 4rem;
+    background-color: #0A355C;
+  }
+  .responded-wrapper .responded-hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+  }
+  .responded-wrapper .responded-hero .responded-h1 {
+    color: white;
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 2.5rem;
+    position: relative;
+    z-index: 2;
+  }
+  .responded-wrapper .responded-hero .responded-p {
+    margin-top: 4rem;
+    font-size: 1.4rem;
+  }
+  .responded-wrapper .responded-hero .responded-click {
+    font-size: 1.4rem;
+  }
+  .responded-wrapper .responded-hero .responded-click .error-span {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #5DADF5;
+  }
+  .responded-wrapper .responded-hero .error-bot {
+    width: 21rem;
+  }
+  .responded-h1:before {
+    content: url("../images/underline.svg");
+    position: absolute;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    bottom: -3.5rem;
+    z-index: -1;
+    left: 0;
+    right: 21rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .responded-wrapper {
+    background-color: #082C4C;
+    width: 100%;
+    height: 100vh;
+  }
+  .responded-wrapper .responded-nav {
+    width: 100%;
+    height: 4rem;
+    background-color: #0A355C;
+  }
+  .responded-wrapper .responded-hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+  }
+  .responded-wrapper .responded-hero .responded-h1 {
+    color: white;
+    text-align: center;
+    margin-top: 8rem;
+    font-size: 2.5rem;
+    position: relative;
+    z-index: 2;
+  }
+  .responded-wrapper .responded-hero .responded-p {
+    margin-top: 4rem;
+    font-size: 1.4rem;
+  }
+  .responded-wrapper .responded-hero .responded-click {
+    font-size: 1.4rem;
+  }
+  .responded-wrapper .responded-hero .responded-click .error-span {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #5DADF5;
+  }
+  .responded-wrapper .responded-hero .error-bot {
+    width: 21rem;
+  }
+  .responded-h1:before {
+    content: url("../images/underline.svg");
+    position: absolute;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    bottom: -3.5rem;
+    z-index: -1;
+    left: 0;
+    right: 21rem;
+  }
+}
+/*# sourceMappingURL=responded.css.map */

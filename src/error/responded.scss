@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700;900&display=swap');
+
+$nunito: 'Nunito', sans-serif;;
+$poppins: 'Poppins', sans-serif;
+$fbBlue: #1B74E4;
+$skyblue: #52C4F8;
+$mustard: #F2D964;
+$green: #42B72A;
+$red: #e2252b;
+
+$blue: #082C4C;
+$navBlue: #0A355C;
+
+.responded-wrapper {
+    background-color: $blue;
+    width: 100%;
+    height: 100vh;
+
+    .responded-nav {
+        width: 100%;
+        height: 4rem;
+        background-color: $navBlue;
+    }
+
+    .responded-hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+
+        .responded-h1 {
+            color: white;
+            text-align: center;
+            margin-top: 4rem;
+            font-size: 1.5rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .responded-p {
+            margin-top: 2rem;
+        }
+
+        .responded-click {
+            .error-span {
+                text-decoration: underline;
+                cursor: pointer;
+                color: #5DADF5;
+            }
+        }
+
+        .error-bot {
+            width: 18rem;
+        }
+    }
+}
+
+.responded-h1:before {
+    content: url('../images/underline.svg');
+    position: absolute;
+    transform: scale(0.45);
+    bottom: -3rem;
+    z-index: -1;
+    left: 0;
+    right: 16rem;
+}
+
+@media screen and (min-width: 1000px) {
+    .responded-wrapper {
+        background-color: $blue;
+        width: 100%;
+        height: 100vh;
+    
+        .responded-nav {
+            width: 100%;
+            height: 4rem;
+            background-color: $navBlue;
+        }
+    
+        .responded-hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+    
+            .responded-h1 {
+                color: white;
+                text-align: center;
+                margin-top: 4rem;
+                font-size: 2.5rem;
+                position: relative;
+                z-index: 2;
+            }
+    
+            .responded-p {
+                margin-top: 4rem;
+                font-size: 1.4rem;
+            }
+    
+            .responded-click {
+                font-size: 1.4rem;
+                .error-span {
+                    text-decoration: underline;
+                    cursor: pointer;
+                    color: #5DADF5;
+                }
+            }
+    
+            .error-bot {
+                width: 21rem;
+            }
+        }
+    }
+    
+    .responded-h1:before {
+        content: url('../images/underline.svg');
+        position: absolute;
+        transform: scale(0.8);
+        bottom: -3.5rem;
+        z-index: -1;
+        left: 0;
+        right: 21rem;
+    }
+
+}
+
+@media screen and (min-width: 1400px) {
+    .responded-wrapper {
+        background-color: $blue;
+        width: 100%;
+        height: 100vh;
+    
+        .responded-nav {
+            width: 100%;
+            height: 4rem;
+            background-color: $navBlue;
+        }
+    
+        .responded-hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+    
+            .responded-h1 {
+                color: white;
+                text-align: center;
+                margin-top: 8rem;
+                font-size: 2.5rem;
+                position: relative;
+                z-index: 2;
+            }
+    
+            .responded-p {
+                margin-top: 4rem;
+                font-size: 1.4rem;
+            }
+    
+            .responded-click {
+                font-size: 1.4rem;
+                .error-span {
+                    text-decoration: underline;
+                    cursor: pointer;
+                    color: #5DADF5;
+                }
+            }
+    
+            .error-bot {
+                width: 21rem;
+            }
+        }
+    }
+    
+    .responded-h1:before {
+        content: url('../images/underline.svg');
+        position: absolute;
+        transform: scale(0.8);
+        bottom: -3.5rem;
+        z-index: -1;
+        left: 0;
+        right: 21rem;
+    }
+
+}

@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+$poppins: 'Poppins', sans-serif;
+$fbBlue: #1B74E4;
+$skyblue: #52C4F8;
+$mustard: #F2D964;
+$green: #42B72A;
+$red: #e2252b;
+
+$hoverblue: #3e96bf;
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important;
+    font-family: $poppins;
+}
+
+
+
+.loginParent {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+
+    .loginContainer {
+        width: 25rem;
+        height: 80%;
+
+
+        .vote-login {
+            text-align: center;
+            color: $fbBlue;
+            font-size: 2.8rem;
+            
+        }   
+
+        .loginBox {
+
+            .inputs-parent {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+    
+                .email-input {
+                    margin: 0 auto;
+                    height: 2.8rem;
+                    border-radius: 19px;
+                    outline: none;
+                    padding: 0.7rem;
+                    width: 18rem;
+                    margin-top: 1rem;
+                    font-size: 1rem;
+                }
+    
+                .password-input {
+                    margin: 0 auto;
+                    height: 2.8rem;
+                    border-radius: 19px;
+                    outline: none;
+                    padding: 0.7rem;
+                    width: 18rem;
+                    margin-top: 0.8rem;
+                    font-size: 1rem;
+                }
+
+                .errMsg {
+                    position: absolute;
+                    bottom: -1.7rem;
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    left: 0;
+                    right: 0;
+                    color: #e2252b;
+                }
+            }
+
+            .loginButton {
+                width: 10rem;
+                height: 2.9rem;
+                font-size: 1.2rem;
+                font-weight: bolder;
+                border-radius: 15px;
+                background-color: $skyblue;
+                color: white;
+                border: none;
+                margin: 0 auto;
+                display: block;
+                margin-top: 2.5rem;
+                cursor: pointer;
+
+                -webkit-tap-highlight-color: transparent;
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                
+            }
+
+            .forgot {
+                text-align: center;
+                margin-top: 0.5rem;
+            }
+
+            .signup {
+                width: 10rem;
+                height: 2.9rem;
+                font-size: 1.2rem;
+                font-weight: bolder;
+                border-radius: 15px;
+                background-color: $green;
+                color: white;
+                border: none;
+                margin: 0 auto;
+                display: block;
+                cursor: pointer;
+                margin-top: 7.5rem;
+
+                -webkit-tap-highlight-color: transparent;
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+
+        }
+
+        
+    }
+}
+
+@media screen and (min-width: 655px) {
+    .loginParent {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+    
+        .loginContainer {
+            width: 100%;
+            height: 100vh;
+            background-color: #F0F2F5;
+            border-radius: 1rem;
+    
+            .vote-login {
+                text-align: center;
+                color: $fbBlue;
+                margin-top: 3rem;
+                font-size: 3.5rem;
+
+            }   
+    
+            .loginBox {
+                margin: 0 auto;
+                background-color: white;
+                width: 20rem;
+                height: 26.5rem;
+                overflow: hidden;
+                border-radius: 1rem;
+
+                .inputs-parent {
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    margin-top: 1.5rem;
+                    
+        
+                    .email-input {
+                        height: 2.8rem;
+                        border-radius: 19px;
+                        outline: none;
+                        padding: 0.7rem;
+                        width: 18rem;
+                        margin-top: 1rem;
+                        font-size: 1rem;
+                        margin: 0 auto;
+                    }
+        
+                    .password-input {
+                        height: 2.8rem;
+                        border-radius: 19px;
+                        outline: none;
+                        padding: 0.7rem;
+                        width: 18rem;
+                        
+                        font-size: 1rem;
+                        margin: 0 auto;
+                        margin-top: 0.8rem;
+                    }
+    
+                    .errMsg {
+                        position: absolute;
+                        bottom: -1.7rem;
+                        text-align: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                        left: 0;
+                        right: 0;
+                        color: #e2252b;
+                    }
+                }
+    
+                .loginButton {
+                    width: 10rem;
+                    height: 2.9rem;
+                    font-size: 1.2rem;
+                    font-weight: bolder;
+                    border-radius: 15px;
+                    background-color: $skyblue;
+                    color: white;
+                    border: none;
+                    margin: 0 auto;
+                    display: block;
+                    margin-top: 2.5rem;
+                    cursor: pointer;
+                    
+                }
+    
+                .forgot {
+                    text-align: center;
+                    margin-top: 0.5rem;
+                }
+    
+                .signup {
+                    width: 10rem;
+                    height: 2.9rem;
+                    font-size: 1.2rem;
+                    font-weight: bolder;
+                    border-radius: 15px;
+                    background-color: $green;
+                    color: white;
+                    border: none;
+                    margin: 0 auto;
+                    display: block;
+                    cursor: pointer;
+                    margin-top: 6.5rem;
+                }
+    
+            }
+    
+            
+        }
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+    .loginParent {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        background-color: #F0F2F5;
+    
+        .loginContainer {
+            max-width: 90rem;
+            height: 100vh;
+            background-color: #F0F2F5;
+            border-radius: 1rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+
+            .vote-login {
+                text-align: center;
+                color: $fbBlue;
+                margin-top: -7rem;
+                font-size: 5rem;
+                position: relative;
+
+            }   
+
+            .vote-login:before {
+                content: "The future is in your hands. Vote wisely!";
+                color: black;
+                font-size: 1.2rem;
+                position: absolute;
+                bottom: -0.8rem;
+                font-weight: 500;
+
+            }
+    
+            .loginBox {
+                margin: 0 auto;
+                background-color: white;
+                width: 23.5rem;
+                height: 28rem;
+                overflow: hidden;
+                border-radius: 1rem;
+                box-shadow: 5px 10px 18px #888888;
+
+                .inputs-parent {
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    margin-top: 1.5rem;
+                    
+                    
+        
+                    .email-input {
+                        height: 3.3rem;
+                        border-radius: 19px;
+                        outline: none;
+                        padding: 0.7rem;
+                        width: 21rem;
+                        margin-top: 1rem;
+                        margin: 0 auto;
+                        font-size: 1.3rem;
+                    }
+        
+                    .password-input {
+                        height: 3.3rem;
+                        border-radius: 19px;
+                        outline: none;
+                        padding: 0.7rem;
+                        width: 21rem;
+                        margin: 0 auto;
+                        margin-top: 0.8rem;
+                        font-size: 1.3rem;
+                        
+                    }
+    
+                    .errMsg {
+                        position: absolute;
+                        bottom: -1.7rem;
+                        text-align: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                        left: 0;
+                        right: 0;
+                        color: #e2252b;
+                    }
+                }
+    
+                .loginButton {
+                    width: 10rem;
+                    height: 2.9rem;
+                    font-size: 1.2rem;
+                    font-weight: bolder;
+                    border-radius: 15px;
+                    background-color: $skyblue;
+                    color: white;
+                    border: none;
+                    margin: 0 auto;
+                    display: block;
+                    margin-top: 2.5rem;
+                    cursor: pointer;
+                    transition: 0.1s all ease-in-out;
+                    
+                }
+    
+                .forgot {
+                    text-align: center;
+                    margin-top: 0.5rem;
+                }
+    
+                .signup {
+                    width: 10rem;
+                    height: 2.9rem;
+                    font-size: 1.2rem;
+                    font-weight: bolder;
+                    border-radius: 15px;
+                    background-color: $green;
+                    color: white;
+                    border: none;
+                    margin: 0 auto;
+                    display: block;
+                    cursor: pointer;
+                    margin-top: 6.5rem;
+                    transition: 0.1s all ease-in-out;
+                }
+    
+            }
+    
+            
+        }
+    }
+}
+
+.loginButton:hover {
+    background-color: $hoverblue !important;
+
+}
+
+.signup:hover {
+    background-color: #2b831a !important;
+
+}
+@media screen and (min-width: 1400px) {
+    .loginParent {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        background-color: #F0F2F5;
+    
+        .loginContainer {
+            max-width: 90rem;
+            height: 100vh;
+            background-color: #F0F2F5;
+            border-radius: 1rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+
+            .vote-login {
+                text-align: center;
+                color: $fbBlue;
+                margin-top: -9rem;
+                font-size: 6rem;
+                position: relative;
+
+            }   
+
+            .vote-login:before {
+                content: "The future is in your hands. Vote wisely!";
+                color: black;
+                font-size: 1.4rem;
+                position: absolute;
+                bottom: -0.8rem;
+                font-weight: 500;
+
+            }
+    
+            .loginBox {
+                margin: 0 auto;
+                background-color: white;
+                width: 32.5rem;
+                height: 31rem;
+                overflow: hidden;
+                border-radius: 1rem;
+                box-shadow: 5px 10px 18px #888888;
+
+                .inputs-parent {
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    margin-top: 2rem;
+                    
+                    
+        
+                    .email-input {
+                        height: 4rem;
+                        border-radius: 19px;
+                        outline: none;
+                        padding: 0.7rem;
+                        width: 27.5rem;
+                        margin-top: 1rem;
+                        margin: 0 auto;
+                        font-size: 1.3rem;
+                    }
+        
+                    .password-input {
+                        height: 4rem;
+                        border-radius: 19px;
+                        outline: none;
+                        padding: 0.7rem;
+                        width: 27.5rem;
+                        margin: 0 auto;
+                        margin-top: 1rem;
+                        font-size: 1.3rem;
+                    }
+    
+                    .errMsg {
+                        position: absolute;
+                        bottom: -1.9rem;
+                        text-align: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                        left: 0;
+                        right: 0;
+                        color: #e2252b;
+                    }
+                }
+    
+                .loginButton {
+                    width: 13rem;
+                    height: 3.5rem;
+                    font-size: 1.5rem;
+                    font-weight: bolder;
+                    border-radius: 15px;
+                    background-color: $skyblue;
+                    color: white;
+                    border: none;
+                    margin: 0 auto;
+                    display: block;
+                    margin-top: 2.8rem;
+                    cursor: pointer;
+                    
+                }
+    
+                .forgot {
+                    text-align: center;
+                    margin-top: 0.5rem;
+                    cursor: pointer;
+                }
+    
+                .signup {
+                    width: 13rem;
+                    height: 3.5rem;
+                    font-size: 1.5rem;
+                    font-weight: bolder;
+                    border-radius: 15px;
+                    background-color: $green;
+                    color: white;
+                    border: none;
+                    margin: 0 auto;
+                    display: block;
+                    cursor: pointer;
+                    margin-top: 5.5rem;
+                }
+    
+            }
+    
+            
+        }
+    }   
+}
