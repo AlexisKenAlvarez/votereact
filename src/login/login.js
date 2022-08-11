@@ -42,7 +42,7 @@ const Login = () => {
     }
     
     const login = () => {
-        Axios.post('https://votereact-app.herokuapp.com/api/login', 
+        Axios.post('https://votereact-app.herokuapp.com/login', 
         {email: email, 
         password: password,
         }).then((response) => {
