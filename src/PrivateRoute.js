@@ -13,8 +13,9 @@ const PrivateRoute = ({ children }) => {
         Axios.get("https://votereact-app.herokuapp.com/login").then((response) => {
             if (response.data.loggedIn === true) {
                 setLoggedIn(true);
+                console.log(response)
             } else {
-                navigate("/" , {replace: true})
+                console.log(response)
             }
         })
     },[])
