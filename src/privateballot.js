@@ -10,7 +10,7 @@ const PrivateRoute = () => {
     
     const [loggedIn, setLoggedIn] = useState(false);
     useEffect(()=> {
-        Axios.get("https://votereact-app.herokuapp.com/login").then((response) => {
+        Axios.get("https://votereact-app.herokuapp.com/api/login").then((response) => {
             if (response.data.loggedIn === true) {
                 setLoggedIn(true);
             } else {
