@@ -36,7 +36,7 @@ const App = () => {
     }
 
     const logOut = () => {
-        Axios.post('https://votereact-app.herokuapp.com/logout').then((response) => {
+        Axios.get('https://votereact-app.herokuapp.com/logout').then((response) => {
             console.log(response)
             
         }, [])
