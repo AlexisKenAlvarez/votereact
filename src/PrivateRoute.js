@@ -12,7 +12,7 @@ const PrivateRoute = () => {
 
     useEffect(()=> {
         // GET DATA FROM axios.get(/login) on backend
-        Axios.get("https://votereact-app.herokuapp.com/loginn").then((response) => {
+        Axios.get("https://votereact-app.herokuapp.com/login").then((response) => {
             if (response.data.loggedIn === true) {
                 setLoggedIn(true);
                 console.log(response)
