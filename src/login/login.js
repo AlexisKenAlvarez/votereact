@@ -16,10 +16,7 @@ const Login = () => {
 
     const [errMsg, setErr] = useState('')
 
-    const [logstatus, setLog] = useState(false)
-
     Axios.defaults.withCredentials = true;
-
 
     const handleEmail = (e) => {
         setEmail(e.target.value)
@@ -46,15 +43,15 @@ const Login = () => {
         {email: email, 
         password: password,
         }).then((response) => {
+            // CHECKS IF THERE IS A MESSAGE FROM THE BACKEND (MEANS THERE IS A PROBLEM IN THE LOGIN)
             if (response.data.message) {
                 setErr(response.data.message)
                 setBorder(true)
             } else {
+                // NAVIGATES TO /home ROUTE OF THERE IS NO PROBLEM (/route redirects to privateRoute)
                 setErr("Logged in")
                 setBorder(false)
                 navigate('/home', {replace: true})
-
-
             }
         })
     }
@@ -72,6 +69,7 @@ const Login = () => {
                             <p className="errMsg">{errMsg}</p>
                         </div>
                         
+                        
                         <button className="loginButton" onClick={login}>Log in</button>
                         <p className="forgot">Forgot Password?</p>
 
@@ -81,11 +79,8 @@ const Login = () => {
             </div>
 
             <Register styleName={style.toString()} close={() => hide()} load={() =>reloadA()}/>
-
-
         </>
     )
 }
-
 
 export default Login
