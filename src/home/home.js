@@ -21,8 +21,8 @@ const Home = () => {
     useEffect(() => {
         Axios.get("https://votereact-app.herokuapp.com/login").then((response) => {
             if (response.data.loggedIn === true) {
-                console.log(response.data)
-                setEmail(response.data.user[0].email)
+                console.log(response)
+                // setEmail(response.data.user[0].email)
             }
         })
     }, [])
