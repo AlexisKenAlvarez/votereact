@@ -23,13 +23,14 @@ const Home = () => {
             if (response.data.loggedIn === true) {
                 console.log(response)
                 setEmail(response.data.user[0].email)
+                console.log(response.data.user[0].email)
             }
         })
     }, [])
 
     const handleBallot = () => {
         
-
+        console.log(userEmail)
         Axios.get('https://votereact-app.herokuapp.com/checkVote', 
         {email: userEmail}).then((response) => {
             if (response.data.voted === true) {
