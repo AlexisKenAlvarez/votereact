@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate, Route, Routes } from "react-router-dom"
-import { motion } from 'framer-motion'
 import Axios from 'axios'
 
 
@@ -38,7 +37,6 @@ const Home = () => {
                 console.log(response.data)
             } else {
                 console.log(response.data.voted)
-                console.log(email)
                 console.log(userEmail)
                 navigate("/ballot", {replace: true})
    
