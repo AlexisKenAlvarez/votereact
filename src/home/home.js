@@ -30,7 +30,7 @@ const Home = () => {
     const handleBallot = () => {
         
 
-        Axios.post('https://votereact-app.herokuapp.com/checkVote', 
+        Axios.get('https://votereact-app.herokuapp.com/checkVote', 
         {email: userEmail}).then((response) => {
             if (response.data.voted === true) {
                 navigate("/responded", {replace: true})
