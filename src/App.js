@@ -17,7 +17,7 @@ import './App.css'
 
 // IMAGE
 import menu from './images/menubtn.svg'
-import reactLogo from './images/React-icon.svg'
+import reactLogo from './images/votelogo.webp'
 
 
 const App = () => {
