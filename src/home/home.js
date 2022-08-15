@@ -31,13 +31,17 @@ const Home = () => {
     const handleBallot = () => {
         
         console.log(userEmail)
-        Axios.get('https://votereact-app.herokuapp.com/checkVote', 
+        Axios.post('https://votereact-app.herokuapp.com/checkVote', 
         {email: userEmail}).then((response) => {
             if (response.data.voted === true) {
                 navigate("/responded", {replace: true})
                 console.log(response.data)
             } else {
+                console.log(response.data.voted)
+                console.log(email)
+                console.log(userEmail)
                 navigate("/ballot", {replace: true})
+   
             }
         })
     }
