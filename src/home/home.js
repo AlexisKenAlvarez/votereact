@@ -22,7 +22,7 @@ const Home = () => {
         Axios.get("https://votereact-app.herokuapp.com/login").then((response) => {
             if (response.data.loggedIn === true) {
                 console.log(response)
-                // setEmail(response.data.user[0].email)
+                setEmail(response.data.user[0].email)
             }
         })
     }, [])
