@@ -3,6 +3,7 @@ import { Navigate, useNavigate } from "react-router-dom"
 import Axios from 'axios'
 import Home from "./home/home.js"
 import Login from "./login/login.js"
+import Loader from './preloader/loader.js'
 
 const PrivateLogin = ({ children }) => {
 
@@ -32,7 +33,7 @@ const PrivateLogin = ({ children }) => {
 
     return (
         <>
-        Loading...
+            <Loader/>
         </>
     )
 

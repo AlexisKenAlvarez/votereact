@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Navigate, useNavigate } from "react-router-dom"
 import Axios from 'axios'
 import Ballot from './ballot/ballot.js'
+import Loader from './preloader/loader.js'
 
 const PrivateRoute = () => {
 
@@ -22,7 +23,7 @@ const PrivateRoute = () => {
     if (!loggedIn) {
         return (
             <>
-                Loading...
+                <Loader/>
             </>
         )
     }

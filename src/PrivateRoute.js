@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useNavigate } from "react-router-dom"
 import Axios from 'axios'
 import Home from "./home/home.js"
+import Loader from './preloader/loader.js'
 
 const PrivateRoute = () => {
 
@@ -26,7 +27,7 @@ const PrivateRoute = () => {
     if (!loggedIn) {
         return (
             <>
-                Loading...
+                <Loader/>
             </>
         )
     }
