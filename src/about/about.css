@@ -190,6 +190,8 @@
     margin-bottom: 0.5rem;
   }
   .aboutsection-wrapper .about-container .oneplace-container .oneplace-items {
+    z-index: 0;
+    position: relative;
     max-width: 100%;
     width: 33rem;
     display: -ms-grid;

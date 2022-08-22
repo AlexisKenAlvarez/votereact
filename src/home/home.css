@@ -268,7 +268,7 @@ body, html {
     width: 2.5rem;
   }
   .side-menu {
-    position: absolute;
+    position: fixed;
     width: 17rem;
     height: 100vh;
     z-index: 2;

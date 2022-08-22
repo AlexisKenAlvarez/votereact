@@ -203,7 +203,8 @@
                     margin-bottom: 0.5rem;
                 }
                 .oneplace-items {
-                    
+                    z-index: 0;
+                    position: relative;
                     max-width: 100%;
                     width: 33rem;
                     display: grid;
