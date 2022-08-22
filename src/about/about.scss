@@ -46,7 +46,8 @@
                 transition: 0.2s all ease-in-out;
             }
             .oneplace-items {
-                
+                z-index: 0;
+                position: relative;
                 max-width: 100%;
                 width: 33rem;
                 display: grid;
@@ -203,8 +204,7 @@
                     margin-bottom: 0.5rem;
                 }
                 .oneplace-items {
-                    z-index: 0;
-                    position: relative;
+                    
                     max-width: 100%;
                     width: 33rem;
                     display: grid;
@@ -540,7 +540,7 @@
             .oneplace-container {
                 .oneplace {
                     margin-left: 4.5rem;
-                    margin-top: 19rem;
+                    margin-top: 6rem;
                     font-size: 1.4rem;
                     margin-bottom: 0.5rem;
                 }
@@ -669,7 +669,7 @@
             .oneplace-container {
                 .oneplace {
                     margin-left: 0rem;
-                    margin-top: 13rem;
+                    margin-top: 6rem;
                     font-size: 2rem;
                     margin-bottom: 0.5rem;
                 }
