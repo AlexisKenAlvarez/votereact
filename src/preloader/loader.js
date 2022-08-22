@@ -1,4 +1,5 @@
 import React from 'react'
+import ScrollToTop from '../ScrollToTop.js'
 
 //STYLES
 import './loader.css'
@@ -8,6 +9,7 @@ import './loader.css'
 const Loader = () => {
     return (
         <>
+            <ScrollToTop/>
             <div className="loader-wrapper">
             <svg width="166" height="166" viewBox="0 0 166 166" fill="none" xmlns="http://www.w3.org/2000/svg" id="logo">
                 <mask id="path-1-outside-1_125_330" maskUnits="userSpaceOnUse" x="0.159058" y="0.173828" width="165" height="165" fill="black">
