@@ -63,6 +63,10 @@ const App = () => {
         }
     })
 
+    const handleAbout = () => {
+        navigate("/about", {replace: true})
+    }
+
 
     const navBar = (
         <>
@@ -80,7 +84,7 @@ const App = () => {
                     <div className="items-container">
                         <ul className="nav-ul">
                             <li className="home-nav nav-items" onClick={toHome}>Home</li>
-                            <li className="about-nav nav-items">About</li>
+                            <li className="about-nav nav-items" onClick={handleAbout}>About</li>
                             <li className="contact-nav nav-items">Contact</li>
                             <li className="logout-nav nav-items" onClick={logOut}>Logout</li>
                         </ul>
@@ -92,9 +96,7 @@ const App = () => {
 
     // FOOTER
 
-    const handleAbout = () => {
-        navigate("/about", {replace: true})
-    }
+
 
     const handleFacebook = () => {
         window.open('https://www.facebook.com/alvarez.aki/')
