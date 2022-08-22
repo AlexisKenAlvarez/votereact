@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate } from "react-router-dom"
 import Axios from 'axios'
+import ScrollToTop from '../ScrollToTop.js'
 
 
 import './login.css'
@@ -58,6 +59,7 @@ const Login = () => {
 
     return (
         <>
+            <ScrollToTop/>
             <div className="loginParent">
                 <div className="loginContainer">
                     <h1 className="vote-login">VoteReact</h1>

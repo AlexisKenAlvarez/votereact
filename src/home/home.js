@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate, Route, Routes } from "react-router-dom"
 import Axios from 'axios'
+import ScrollToTop from '../ScrollToTop.js'
 
 
 //COMPONENT
@@ -50,6 +51,7 @@ const Home = () => {
     const hero = (
         
         <>
+            <ScrollToTop/>
             <div className="hero-wrapper">
                 <p className="sidetext">VoteNow -</p>
                 <div className="hero-container">

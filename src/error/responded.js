@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { useNavigate } from "react-router-dom"
+import ScrollToTop from '../ScrollToTop.js'
 
 // IMAGES
 import Error from '../images/error.png'
@@ -16,6 +17,7 @@ const Responded = () => {
     }
     return  (
         <>
+            <ScrollToTop/>
             <div className="responded-wrapper">
                 <div className="responded-nav"></div>
                 <div className="responded-hero">

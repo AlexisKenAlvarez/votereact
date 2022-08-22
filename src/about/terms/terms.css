@@ -1,0 +1,43 @@
+.terms-wrapper {
+  padding-bottom: 4rem;
+}
+
+.terms-wrapper .terms-container {
+  width: 100%;
+  padding: 2rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  text-align: justify;
+  height: 35rem;
+  margin-top: 5rem;
+  overflow-y: auto;
+}
+
+.terms-wrapper .terms-container .terms-h1 {
+  text-align: left;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 945px) {
+  .terms-wrapper {
+    padding-bottom: 4rem;
+  }
+  .terms-wrapper .terms-container {
+    width: 100%;
+    padding: 2rem 5rem 2rem 5rem;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
+    text-align: justify;
+  }
+  .terms-wrapper .terms-container .terms-h1 {
+    font-size: 2.5rem;
+  }
+}
+/*# sourceMappingURL=terms.css.map */

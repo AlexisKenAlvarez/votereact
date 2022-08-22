@@ -1,0 +1,642 @@
+.aboutsection-wrapper {
+  width: 100%;
+  height: auto;
+}
+
+.aboutsection-wrapper .about-nav-bg {
+  background-color: #0A355C;
+  height: 4rem;
+  width: 100%;
+}
+
+.aboutsection-wrapper .about-drop {
+  background-color: #f2f2f2;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+  display: block;
+  margin-top: 5rem;
+  background-position: center;
+  overflow-y: hidden;
+  background-image: url("../images/about/banner.webp");
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.aboutsection-wrapper .about-container .about-headers .about-p {
+  margin-left: 1.2rem;
+  margin-top: 3rem;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.aboutsection-wrapper .about-container .about-headers .about-h1 {
+  margin-left: 1.2rem;
+  font-weight: 400;
+  width: 20rem;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.aboutsection-wrapper .about-container .oneplace-container .oneplace {
+  margin-left: 1.2rem;
+  margin-top: 4rem;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.aboutsection-wrapper .about-container .oneplace-container .oneplace-items {
+  max-width: 100%;
+  width: 33rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 20rem 20rem 20rem;
+      grid-template-rows: 20rem 20rem 20rem;
+  row-gap: 2rem;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-first-box {
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+}
+
+.aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-first-box .firstbox-image {
+  height: 14rem;
+  background-image: url("../images/about/hands.webp");
+  background-size: 50rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: 2;
+}
+
+.aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-first-box .firstbox-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-top: 0.5rem;
+  position: relative;
+  z-index: 3;
+  background-color: white;
+  width: 100%;
+  height: 103%;
+}
+
+.aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-second-box {
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+}
+
+.aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-second-box .secondbox-image {
+  height: 14rem;
+  background-image: url("../images/about/privacy.webp");
+  background-size: 37rem;
+  background-repeat: no-repeat;
+  background-position: -5rem -3rem;
+  position: relative;
+  z-index: 2;
+}
+
+.aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-second-box .secondbox-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-top: 0.5rem;
+  z-index: 3;
+  position: relative;
+  background-color: white;
+  width: 100%;
+  height: 103%;
+}
+
+.aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-thrid-box {
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+}
+
+.aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-thrid-box .thirdbox-image {
+  height: 14rem;
+  background-image: url("../images/about/terms-about.webp");
+  background-size: 35rem;
+  background-repeat: no-repeat;
+  background-position: center -3rem;
+  position: relative;
+  z-index: 2;
+}
+
+.aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-thrid-box .thirdbox-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-top: 0.5rem;
+  position: relative;
+  z-index: 3;
+  background-color: white;
+  width: 100%;
+  height: 103%;
+}
+
+.aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-box {
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+  overflow: hidden;
+  position: relative;
+  overflow: hidden;
+}
+
+.aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-box .about-image {
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.about-image:focus, .about-image:hover {
+  -webkit-filter: brightness(85%);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media screen and (min-width: 470px) {
+  .aboutsection-wrapper {
+    width: 100%;
+    height: auto;
+  }
+  .aboutsection-wrapper .about-nav-bg {
+    background-color: #0A355C;
+    height: 4rem;
+    width: 100%;
+  }
+  .aboutsection-wrapper .about-container .about-headers .about-p {
+    margin-left: 1.2rem;
+    margin-top: 3rem;
+    font-size: 1.4rem;
+  }
+  .aboutsection-wrapper .about-container .about-headers .about-h1 {
+    margin-left: 1.2rem;
+    font-weight: 400;
+    font-size: 2.5rem;
+    width: 30rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace {
+    margin-left: 1.2rem;
+    margin-top: 4rem;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items {
+    max-width: 100%;
+    width: 33rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 60vw 60vw 60vw;
+        grid-template-rows: 60vw 60vw 60vw;
+    row-gap: 4rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-first-box {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-first-box .firstbox-image {
+    height: 80%;
+    background-image: url("../images/about/hands.webp");
+    background-size: 50rem;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-first-box .firstbox-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-top: 0.5rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-second-box {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-second-box .secondbox-image {
+    height: 80%;
+    background-image: url("../images/about/privacy.webp");
+    background-size: 37rem;
+    background-repeat: no-repeat;
+    background-position: -5rem -3rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-second-box .secondbox-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-top: 0.5rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-thrid-box {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-thrid-box .thirdbox-image {
+    height: 80%;
+    background-image: url("../images/about/terms-about.webp");
+    background-size: 35rem;
+    background-repeat: no-repeat;
+    background-position: center -3rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-thrid-box .thirdbox-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-top: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 645px) {
+  .aboutsection-wrapper {
+    width: 100%;
+    height: auto;
+  }
+  .aboutsection-wrapper .about-nav-bg {
+    background-color: #0A355C;
+    height: 4rem;
+    width: 100%;
+  }
+  .aboutsection-wrapper .about-container .about-headers .about-p {
+    margin-left: 1.2rem;
+    margin-top: 3rem;
+    font-size: 1.6rem;
+  }
+  .aboutsection-wrapper .about-container .about-headers .about-h1 {
+    margin-left: 1.2rem;
+    font-weight: 400;
+    font-size: 2.9rem;
+    width: 35rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace {
+    margin-left: 1.2rem;
+    margin-top: 4rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items {
+    max-width: 100%;
+    width: 33rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 24rem 24rem 24rem;
+        grid-template-rows: 24rem 24rem 24rem;
+    row-gap: 4rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-first-box {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-first-box .firstbox-image {
+    height: 80%;
+    background-image: url("../images/about/hands.webp");
+    background-size: 50rem;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-first-box .firstbox-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-top: 0.5rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-second-box {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-second-box .secondbox-image {
+    height: 80%;
+    background-image: url("../images/about/privacy.webp");
+    background-size: 37rem;
+    background-repeat: no-repeat;
+    background-position: -5rem -3rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-second-box .secondbox-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-top: 0.5rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-thrid-box {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-thrid-box .thirdbox-image {
+    height: 80%;
+    background-image: url("../images/about/terms-about.webp");
+    background-size: 35rem;
+    background-repeat: no-repeat;
+    background-position: center -3rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-thrid-box .thirdbox-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-top: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 764px) {
+  .aboutsection-wrapper {
+    width: 100%;
+    height: auto;
+  }
+  .aboutsection-wrapper .about-nav-bg {
+    background-color: #0A355C;
+    height: 4rem;
+    width: 100%;
+  }
+  .aboutsection-wrapper .about-drop {
+    background-color: #f2f2f2;
+    -webkit-transition: 0.5s all ease-in-out;
+    transition: 0.5s all ease-in-out;
+    display: block;
+    margin-top: 5rem;
+    background-image: url("../images/about/banner.webp");
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0 auto;
+  }
+  .aboutsection-wrapper .about-container .about-headers .about-p {
+    margin-left: 1.2rem;
+    margin-top: 3rem;
+    font-size: 1.6rem;
+  }
+  .aboutsection-wrapper .about-container .about-headers .about-h1 {
+    margin-left: 1.2rem;
+    font-weight: 400;
+    font-size: 3.5rem;
+    width: 45rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace {
+    margin-left: 1.2rem;
+    margin-top: 4rem;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items {
+    max-width: 100%;
+    width: 33rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 24rem 24rem 24rem;
+        grid-template-rows: 24rem 24rem 24rem;
+    row-gap: 4rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-first-box {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-first-box .firstbox-image {
+    height: 80%;
+    background-image: url("../images/about/hands.webp");
+    background-size: 50rem;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-first-box .firstbox-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-top: 0.5rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-second-box {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-second-box .secondbox-image {
+    height: 80%;
+    background-image: url("../images/about/privacy.webp");
+    background-size: 37rem;
+    background-repeat: no-repeat;
+    background-position: -5rem -3rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-second-box .secondbox-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-top: 0.5rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-thrid-box {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-thrid-box .thirdbox-image {
+    height: 80%;
+    background-image: url("../images/about/terms-about.webp");
+    background-size: 35rem;
+    background-repeat: no-repeat;
+    background-position: center -3rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-thrid-box .thirdbox-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-top: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 952px) {
+  .aboutsection-wrapper {
+    width: 100%;
+    height: auto;
+  }
+  .aboutsection-wrapper .about-nav-bg {
+    background-color: #0A355C;
+    height: 4rem;
+    width: 100%;
+  }
+  .aboutsection-wrapper .about-container .about-headers .about-p {
+    margin-left: 4.5rem;
+    margin-top: 5rem;
+    font-size: 1.6rem;
+  }
+  .aboutsection-wrapper .about-container .about-headers .about-h1 {
+    margin-left: 4.5rem;
+    font-weight: 400;
+    font-size: 3.5rem;
+    width: 45rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace {
+    margin-left: 4.5rem;
+    margin-top: 19rem;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items {
+    max-width: 100%;
+    width: 88%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 40vw;
+        grid-template-rows: 40vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    row-gap: 4rem;
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+    margin-left: 4.5rem;
+    margin-right: 4.5rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-first-box {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-first-box .firstbox-image {
+    height: 80%;
+    background-image: url("../images/about/hands.webp");
+    background-size: 50rem;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-first-box .firstbox-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-top: 0.5rem;
+    text-align: center;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-second-box {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-second-box .secondbox-image {
+    height: 80%;
+    background-image: url("../images/about/privacy.webp");
+    background-size: 45rem;
+    background-repeat: no-repeat;
+    background-position: -5rem -3rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-second-box .secondbox-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-top: 0.5rem;
+    text-align: center;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-thrid-box {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-thrid-box .thirdbox-image {
+    height: 80%;
+    background-image: url("../images/about/terms-about.webp");
+    background-size: 43rem;
+    background-repeat: no-repeat;
+    background-position: center -3rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-thrid-box .thirdbox-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-top: 0.5rem;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1289px) {
+  .aboutsection-wrapper {
+    width: 100%;
+    height: auto;
+  }
+  .aboutsection-wrapper .about-nav-bg {
+    background-color: #0A355C;
+    height: 4rem;
+    width: 100%;
+  }
+  .aboutsection-wrapper .about-drop {
+    background-color: #f2f2f2;
+    -webkit-transition: 0.5s all ease-in-out;
+    transition: 0.5s all ease-in-out;
+    display: block;
+    margin-top: 5rem;
+    background-image: url("../images/about/banner.webp");
+    overflow-y: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .aboutsection-wrapper .about-container {
+    margin: 0 auto;
+    width: 88%;
+  }
+  .aboutsection-wrapper .about-container .about-headers .about-p {
+    margin-left: 0rem;
+    margin-top: 5rem;
+    font-size: 2rem;
+  }
+  .aboutsection-wrapper .about-container .about-headers .about-h1 {
+    margin-left: 0rem;
+    font-weight: 400;
+    font-size: 4.5rem;
+    width: 60rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace {
+    margin-left: 0rem;
+    margin-top: 13rem;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items {
+    max-width: 100%;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 32rem;
+        grid-template-rows: 32rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    row-gap: 4rem;
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-first-box {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-first-box .firstbox-image {
+    height: 80%;
+    background-image: url("../images/about/hands.webp");
+    background-size: 50rem;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-first-box .firstbox-title {
+    font-size: 2rem;
+    font-weight: 400;
+    padding-top: 0.5rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-second-box {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-second-box .secondbox-image {
+    height: 80%;
+    background-image: url("../images/about/privacy.webp");
+    background-size: 45rem;
+    background-repeat: no-repeat;
+    background-position: -5rem -3rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-second-box .secondbox-title {
+    font-size: 2rem;
+    font-weight: 400;
+    padding-top: 0.5rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-thrid-box {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-thrid-box .thirdbox-image {
+    height: 80%;
+    background-image: url("../images/about/terms-about.webp");
+    background-size: 43rem;
+    background-repeat: no-repeat;
+    background-position: center -3rem;
+  }
+  .aboutsection-wrapper .about-container .oneplace-container .oneplace-items .about-thrid-box .thirdbox-title {
+    font-size: 2rem;
+    font-weight: 400;
+    padding-top: 0.5rem;
+  }
+}
+/*# sourceMappingURL=about.css.map */

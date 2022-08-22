@@ -1,0 +1,43 @@
+.privacy-wrapper {
+  padding-bottom: 4rem;
+}
+
+.privacy-wrapper .privacy-container {
+  width: 100%;
+  height: 35rem;
+  margin-top: 5rem;
+  overflow-y: auto;
+  padding: 2rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  text-align: justify;
+}
+
+.privacy-wrapper .privacy-container .privacy-h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 3.9rem;
+}
+
+@media screen and (min-width: 945px) {
+  .privacy-wrapper {
+    padding-bottom: 4rem;
+  }
+  .privacy-wrapper .privacy-container {
+    width: 100%;
+    padding: 2rem 5rem 2rem 5rem;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
+    text-align: justify;
+  }
+  .privacy-wrapper .privacy-container .privacy-h1 {
+    font-size: 2.5rem;
+  }
+}
+/*# sourceMappingURL=privacy.css.map */

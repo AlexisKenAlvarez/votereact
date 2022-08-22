@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { useNavigate } from "react-router-dom"
+import ScrollToTop from '../ScrollToTop.js'
 
 // IMAGES
 import Plane from '../images/animation_500_l5htkal7.gif'
@@ -20,6 +21,7 @@ const Submitted = () => {
 
     return  (
         <>
+            <ScrollToTop/>
             <div className="submitted-wrapper">
                 <div className="submitted-nav"></div>
                 <div className="submitted-hero">

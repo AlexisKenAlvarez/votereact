@@ -9,6 +9,7 @@ import PrivateRoute from './PrivateRoute.js'
 import PrivateLogin from './privateLogin.js'
 import PrivateBallot from './privateballot.js'
 import PrivateResponded from './privateResponded.js'
+import About from './about/about.js'
 
 // STYLE
 import './login/login.css'
@@ -18,6 +19,12 @@ import './App.css'
 // IMAGE
 import menu from './images/menubtn.svg'
 import reactLogo from './images/votelogo.webp'
+
+// FOOTER SOCMED
+import facebook from './images/footer/001-facebook.svg'
+import linkedin from './images/footer/010-linkedin.svg'
+import instagram from './images/footer/011-instagram.svg'
+import tiktok from './images/footer/016-tiktok.svg'
 
 
 const App = () => {
@@ -83,6 +90,82 @@ const App = () => {
         </>
     )
 
+    // FOOTER
+
+    const handleAbout = () => {
+        navigate("/about", {replace: true})
+    }
+
+    const handleFacebook = () => {
+        window.open('https://www.facebook.com/alvarez.aki/')
+    }
+
+    const handleLinkedin = () => {
+        window.open('https://www.linkedin.com/in/AlexisKenAlvarez/?fbclid=IwAR03PF7gf7MrRLDUta-uI1LdJ5PUQh0r3UBAug15sf9nqsRLgxQT2BOLbu8')
+    }
+
+    const handleInsta = () => {
+        window.open('https://www.instagram.com/alexiskenalvarez/')
+    }
+
+    const handleTiktok = () => {
+        window.open('https://www.tiktok.com/@aki.alvarez?fbclid=IwAR3irqVi7g-62kw1ACWfnXXhL06S29xxhfFkVOdiTTTp30T_dBVN7gePSuM')
+    }
+
+    const handleScrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
+
+    
+
+    const footer = (
+        <>
+            <div className="footer-wrapper">
+                <div className="footer-container">
+                    <div className="footer-up">
+                        <p className='elect'>"Elect a clown, Expect a circus."</p>
+                        <div className="hori-line-upper"></div>
+                    </div>
+                    
+                    <div className="footer-mid">
+                        <div className="fmid-left">
+                            <h1 className="follow-on">FOLLOW ON</h1>
+                            <div className="footer-soc-container">
+                                <img className='footer-fb footer-soc' src={facebook} onClick={handleFacebook}></img>
+                                <img className='footer-ig footer-soc' src={instagram} onClick={handleInsta}></img>
+                                <img className='footer-linkedin footer-soc' src={linkedin} onClick={handleLinkedin}></img>
+                                <img className='footer-tiktok footer-soc' src={tiktok} onClick={handleTiktok}></img>
+                            </div>
+                        </div>
+                        <div className="fmid-right">
+                            
+                            <h1 className='footer-about'>Navigate</h1>
+                            <div className='footer-about-items'>
+                                <div className="verti-line-mid"></div>
+                                <p className='footer-team about-items' onClick={handleAbout}>About us</p>
+                                <p className='footer-privacy about-items' onClick={handleAbout}>Privacy Policy</p>
+                                <p className='footer-mission about-items' onClick={handleAbout}>Mission</p>
+                               
+                                <p className='footer-terms about-items' onClick={handleAbout}>Terms of Use</p>
+
+                            </div> 
+                        </div>
+                    </div>
+
+                    <div className="footer-down">
+                        <p className="footer-back" onClick={handleScrollToTop}>Back to top</p>
+                        <div className="hori-line-lower"></div>
+
+                        <p className="copyright">Copyright © All Rights Reserved 2022</p>
+                    </div>
+                </div>
+            </div>
+        </>
+    )
+
     return (
         <>
             {nav ?  navBar  : null}
@@ -91,6 +174,7 @@ const App = () => {
                 
                 <Route exact path="/" element={<PrivateLogin/>}></Route>
                 <Route exact path="/ballot" element={<PrivateBallot/>}></Route>
+                <Route exact path="/about" element={<About/>}></Route>
                 <Route exact path="/responded" element={<PrivateResponded/>}></Route>
             
                 <Route exact path="/home" element={
@@ -101,6 +185,8 @@ const App = () => {
                 }></Route>
 
             </Routes>
+
+            {footer}
         </>
     )
 }
