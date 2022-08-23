@@ -15,16 +15,48 @@ body, html {
     overflow-x: hidden;
 }
 
+.navWrapper {
+    height: 4rem;
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 0;
+    .navContainer {
+        max-width: 1000rem;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1rem 0 1rem;
 
+        .react-logo {
+            width: 2.5rem;
+            filter: invert(50%) sepia(0%) saturate(100%) hue-rotate(300deg) brightness(211%) contrast(98%);
+            display: none;
+            cursor: pointer;
+        }
 
+        .votereact {
+            font-size: 1.6rem;
+            cursor: pointer;
+        }
 
+        .menu-btn {
+            cursor: pointer;
+            width: 2rem;
+            
+
+        }
+    }
+}
 
 .side-menu {
     position: fixed;
-    width: 13rem;
+    width: 14rem;
     height: 100vh;
     z-index: 2;
-    background-color: #EFEFEF;
+    background-color: rgba(0, 0, 0, 0.1);
     right: 0;
     top: 0;
     display: flex;
@@ -37,8 +69,9 @@ body, html {
 
     .side-menu-inner {
 
-        width: 12rem;
+        width: 14rem;
         height: 97vh;
+        margin-right: -2rem;
         border-radius: 1rem;
         background-color: white;
         position: relative;
@@ -48,6 +81,7 @@ body, html {
             font-family: $nunito;
             font-weight: 800;
             margin: 1rem;
+            margin-right: 2rem;
             position: absolute;
             right: 0;
             cursor: pointer;
@@ -136,12 +170,12 @@ body, html {
 .main-content-wrapper {
     height: 100vh;
     background-color: $blue;
-    background-image: url('../images/votefinal.png');
+    background-image: url('../images/homepage.webp');
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: 36rem;
+    background-size: cover;
+    background-position: -19rem center;
     overflow: hidden;
-    
 }
 
 .hero-wrapper {
@@ -220,8 +254,10 @@ body, html {
 }
 
 @media screen and (min-width: 500px) {
+
+    // HERO 
     .main-content-wrapper {
-        background-size: 45rem;
+        background-position: -14rem center;
     }
 
     .hero-wrapper {
@@ -251,10 +287,11 @@ body, html {
         display: block !important;
     }
 
-    .main-content-wrapper {
-        background-size: contain;
-        
-    }
+        // HERO 
+        .main-content-wrapper {
+            background-position: -10rem center;
+        }
+
 
     .hero-wrapper {
         .sidetext {
@@ -279,6 +316,11 @@ body, html {
 }
 
 @media screen and (min-width: 991px) {
+    // HERO 
+    .main-content-wrapper {
+        background-position: -4rem center;
+    }
+
     // NAV
     .navWrapper {
         .navContainer {
@@ -298,7 +340,7 @@ body, html {
         width: 17rem;
         height: 100vh;
         z-index: 2;
-        background-color: #EFEFEF;
+        background-color: rgba(0, 0, 0, 0.1);
         right: 0;
         top: 0;
         display: flex;
@@ -310,9 +352,10 @@ body, html {
     
         .side-menu-inner {
     
-            width: 15rem;
+            width: 16rem;
             height: 97vh;
             border-radius: 1rem;
+            margin-right: -2rem;
             background-color: white;
             position: relative;
             
@@ -321,6 +364,7 @@ body, html {
                 font-family: $nunito;
                 font-weight: 800;
                 margin: 1rem;
+                margin-right: 1.7rem;
                 position: absolute;
                 right: 0;
                 cursor: pointer;
@@ -391,10 +435,6 @@ body, html {
         transform: scale(0.15);
     }
     
-    .main-content-wrapper {
-        background-size: cover;
-        background-position: center 1rem;
-    }
     .hero-wrapper {
         .sidetext {
         }
@@ -439,7 +479,17 @@ body, html {
     }
 }
 
+@media screen and (min-width: 1200px) {
+        // HERO 
+        .main-content-wrapper {
+            background-position: center center;
+        }
+}
+
 @media screen and (min-width: 1300px) {
+
+
+
     .hero-wrapper {
         .sidetext {
         }
@@ -477,10 +527,6 @@ body, html {
 }
 
 @media screen and (min-width: 1600px) and (min-height: 860px) {
-    .main-content-wrapper {
-        background-size: cover;
-        background-position: center 1rem;
-    }
     .hero-wrapper {
         .sidetext {
         }
@@ -492,7 +538,7 @@ body, html {
                 white-space: pre-line;
                 text-align: center;
                 font-size: 9.9rem;
-                line-height: 8.9rem;
+                line-height: 9.5rem;
                 font-weight: 800;
                 margin-top: 8rem;
             }

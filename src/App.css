@@ -1,46 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
-.navWrapper {
-  height: 4rem;
-  width: 100%;
-  color: white;
-  position: absolute;
-  top: 0;
-}
-
-.navWrapper .navContainer {
-  max-width: 1000rem;
-  height: 100%;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0 1rem 0 1rem;
-}
-
-.navWrapper .navContainer .react-logo {
-  width: 2.5rem;
-  -webkit-filter: invert(50%) sepia(0%) saturate(100%) hue-rotate(300deg) brightness(211%) contrast(98%);
-          filter: invert(50%) sepia(0%) saturate(100%) hue-rotate(300deg) brightness(211%) contrast(98%);
-  display: none;
-  cursor: pointer;
-}
-
-.navWrapper .navContainer .votereact {
-  font-size: 1.6rem;
-  cursor: pointer;
-}
-
-.navWrapper .navContainer .menu-btn {
-  cursor: pointer;
-  width: 2rem;
-}
-
 /* width */
 ::-webkit-scrollbar {
   width: 10px;

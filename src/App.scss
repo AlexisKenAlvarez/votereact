@@ -3,42 +3,6 @@
 $merri: 'Merriweather', serif;
 
 
-.navWrapper {
-    height: 4rem;
-    width: 100%;
-    color: white;
-    position: absolute;
-    top: 0;
-    .navContainer {
-        max-width: 1000rem;
-        height: 100%;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 1rem 0 1rem;
-
-        .react-logo {
-            width: 2.5rem;
-            filter: invert(50%) sepia(0%) saturate(100%) hue-rotate(300deg) brightness(211%) contrast(98%);
-            display: none;
-            cursor: pointer;
-        }
-
-        .votereact {
-            font-size: 1.6rem;
-            cursor: pointer;
-        }
-
-        .menu-btn {
-            cursor: pointer;
-            width: 2rem;
-            
-
-        }
-    }
-}
-
 // SCROLLBAR
 /* width */
 ::-webkit-scrollbar {
